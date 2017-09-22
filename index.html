@@ -1,7 +1,19 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<head>
+<meta http-equiv="refresh" content="10; url=https://www.linkedin.com/in/okkymustika/" />
+<title>H e l l o . . !</title>
+</head>
 <body>
-<h1>Hello World !</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<center><h3>We'll back soon!</h3><p>You'll redirected to my LinkedIn profile in <span id='timer'>10</span> secs.<br/>if it doesn't work, please click <a href="https://www.linkedin.com/in/okkymustika/">here</a>.</p></center>
 </body>
+<script type='text/javascript'>
+var counter = 10;
+var interval = setInterval(function() {
+    counter-=1;
+    document.getElementById('timer').innerHTML=counter;
+    if (counter <= 0) {
+        clearInterval(interval);
+    }
+}, 1000);
+</script>
 </html>
